@@ -81,7 +81,6 @@ function App() {
     {console.log('fxhash data:', fx)}
     {axios.post}
     {/* {console.log('tzkt data:', bakers)} */}
-    <img src = {"https://media.artblocks.io/0.png?useCustomViewParams=true&&width=10vw"}/>
     {loading? <p>loading</p> :
     <div>
     <SingleItemTable column = {["user_name","user_avatarUri","user_id","user_description"]} data = {fx} />
