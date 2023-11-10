@@ -1,0 +1,177 @@
+.topbar {
+
+    position: absolute;
+    width: 1392px;
+    height: 80px;
+    left: 24px;
+    top: 24px;
+
+    background: #FFFAED;
+    border: 0px solid #333333;
+    box-shadow: 0px 16px 60px rgba(0, 0, 0, 0.03);
+    border-radius: 16px;
+
+}
+
+.topbar .vertically-center{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.topbar .logo{
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    left: 16px;
+}
+
+/* GART */
+
+.topbar .gart{
+    position: absolute;
+    width: 65px;
+    height: 36px;
+    left: 105px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #182730;
+}
+
+.topbar .search{/* Search */
+
+
+    position: absolute;
+    width: 815px;
+    height: 48px;
+    left: 281px;
+    top: 40px;
+    
+    background: #F0F2F5;
+    border-radius: 32px;
+}
+
+.topbar .icon{/* Vector */
+
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 17px;
+
+}
+
+.topbar .search-text{
+    position: absolute;
+    width: 50px;
+    height: 21px;
+    left: 40px;
+    top: 14px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #727272;
+}
+
+.topbar .search-frame{
+    position: absolute;
+    width: 80%;
+    height: 21px;
+    left: 40px;
+    top: 14px;
+
+    background: 0;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #727272;
+
+}
+
+
+.topbar .notification{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 1120px;
+    top: 43px;
+}
+
+.topbar .notification-icon{
+    position: absolute;
+    left: 13.79%;
+    right: 16.66%;
+    top: 13.79%;
+    bottom: 16.67%;
+}
+
+.topbar .connect-wallet{
+    /* Frame 48096645 */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 9px 0px;
+gap: 10px;
+
+position: absolute;
+width: 200px;
+height: 40px;
+right: 16px;
+top: 45px;
+
+background: #FFFAED;
+border: 2px solid #000000;
+border-radius: 20px;
+}
+
+.topbar .connect-wallet-text{
+    /* Connect Wallet */
+
+
+width: 200px;
+height: 21px;
+
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+/* identical to box height */
+
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 1;
+}

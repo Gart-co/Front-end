@@ -1,0 +1,230 @@
+.sidebar {
+    /* Rectangle 298 */
+    position: fixed;
+    width: 236px;
+    height: 640px;
+    left: 24px;
+    top: 128px;
+
+    background: #FFFAED;
+    border: #333333;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 16px;
+}
+
+.sidebar .menu{
+    /* MENU */
+
+
+position: absolute;
+width: 46px;
+height: 24px;
+left: 24px;
+top: 16px;
+bottom:32px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #000000;
+
+}
+
+.sidebar .setting{
+    /* Setting */
+
+
+position: absolute;
+width: 65px;
+height: 24px;
+left: 24px;
+top: 400px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+
+}
+
+.sidebar .frame{
+    /* Frame item */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+height: 24px;
+}
+
+.sidebar .frame-menu{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 188px;
+height: 294px;
+left: 24px;
+right: 24px;
+top: 48px;
+
+}
+
+.sidebar .frame-setting{
+    /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 188px;
+height: 294px;
+left: 24px;
+right: 24px;
+top: 430px;
+
+}
+
+.sidebar .selected{
+
+
+    width: 124px;
+    height: 24px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px;
+    }
+
+.sidebar .font{
+
+
+width: 124px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 16px;
+}
+
+.sidebar .frame-profile{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 188px;
+    height: 154px;
+    left: 0px;
+    right: 24px;
+    bottom:0    
+}
+
+.sidebar .profile-name{
+
+
+position: absolute;
+width: 100px;
+height: 24px;
+left: 53px;
+top: 83px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: right;
+
+color: #262626;
+}
+
+.sidebar .profile-role{
+    /* Creator */
+
+
+position: absolute;
+width: 54px;
+height: 21px;
+left: 99px;
+top: 110px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: right;
+
+color: #727272;
+
+}
+
+.sidebar .profile-image{
+    
+position: absolute;
+width: 48px;
+height: 48px;
+left: 169px;
+top: 83px;
+}

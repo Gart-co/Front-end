@@ -1,0 +1,15 @@
+
+.home{
+position: relative;
+width: 1440px;
+height: 1460px;
+}
+/* lin2 */
+.background{
+background: #FFFAED;
+}
+
+.content{
+    left:200px;
+    top:130px;
+}

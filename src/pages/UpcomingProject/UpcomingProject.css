@@ -1,0 +1,24 @@
+.upcoming-project {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .upcoming-project  .title1 {
+    color: #262626;
+    font-size: 1.375rem;
+    font-family: Poppins;
+    font-weight: 500;
+  }
+  
+  .upcoming-project  .selector {
+    height:fit-content;
+    margin: 18px 0px 18px 0px;
+  }
+  
+  .upcoming-project  .upcome-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  

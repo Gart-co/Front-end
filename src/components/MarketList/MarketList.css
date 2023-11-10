@@ -1,0 +1,13 @@
+.MarketList{
+    flex-direction: column;
+
+}
+
+.MarketList{
+    display: flex;
+    width: 64rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    margin:10px;
+}

@@ -1,0 +1,6 @@
+.bigger{
+}
+
+.bigger * {
+    transform: scale(0.67); /* 1 / 1.5 ≈ 0.67 */
+  }

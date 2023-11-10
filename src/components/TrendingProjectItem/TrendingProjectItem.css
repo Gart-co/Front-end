@@ -1,0 +1,374 @@
+.trending-item {
+
+    align-content: center;
+    width: 254px;
+    height: 319px;
+    display: flex;
+    flex-direction: column;
+    order: 0;
+    flex-grow: 0;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    
+    background: #FFFAED;
+    border: 0px solid black;
+    border-radius: 16px;
+}
+.trending-item .line {
+    position: absolute;
+    top:240px;
+    left:30px;
+    width: 80%;
+    border: 1px solid black; /* 绘制1像素宽的黑色边框，形成线条效果 */
+    margin: 10px auto; /* 可以添加一些间距，以使线与其他元素分开 */
+}
+.trending-item .item-img{
+    width: 99%;
+    height: 56%;
+    position: absolute;
+    left: 0.5%;
+    right: 0%;
+    top: 0.4%;
+    bottom: 43.57%;
+    
+    background: #D9D9D9;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.trending-item .item-content{
+    position: absolute;
+    left: 2.76%;
+    right: 2.76%;
+    top: 57.99%;
+}
+
+.trending-item .item-content-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    
+    width: 223px;
+    height: 24px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .item-title{
+    min-width: 120px;
+    height: 24px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    
+    color: #727272;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .item-platform{
+    width: fit-content;
+    height: 24px;
+    position: absolute;
+    right:0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: rgba(38, 38, 38, 0.56);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trending-item .user{
+    position: relative;
+    left: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    
+    width: 141px;
+    height: 32px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.trending-item .user-avatar{
+    width: 28px;
+    height: 28px;
+
+    background: #D9D9D9;
+    border-radius: 16px 16px 16px 16px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .user-component{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    
+    width: 97px;
+    height: 18px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.trending-item .user-name{
+    min-width: 35px;
+    height: 18px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    
+    color: rgba(38, 38, 38, 0.56);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .follow-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 16px;
+    gap: 10px;
+    isolation: isolate;
+    
+    width: 50px;
+    height: 16px;
+    
+    background: #182730;
+    border-radius: 40px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trending-item .follow{
+    position: relative;
+    width: 26px;
+    height: 12px;
+    left: -3px;
+    top: -4px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 12px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.trending-item .market-trend{
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 6px;
+
+position: absolute;
+left: 2.76%;
+right: 2.76%;
+bottom: 5.96%;
+}
+
+.trending-item .floor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    width: 45px;
+    height: 39px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .market-title{
+    width: 29px;
+    height: 18px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    
+    color: rgba(38, 38, 38, 0.56);
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .market-price-frame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 45px;
+    height: 21px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trending-item .coin-logo{
+    width: 16px;
+    height: 16px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.trending-item .market-price-text{
+    width: 29px;
+    height: 21px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #262626;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trending-item .change{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    
+    width: 64px;
+    height: 39px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.trending-item .percentage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    width: 113px;
+    height: 39px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}

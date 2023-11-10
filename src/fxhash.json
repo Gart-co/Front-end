@@ -5,6 +5,9 @@
   "generativeTokensTake2": 3,
   "generativeTokensTake3": 5,
   "objktsTake2": null,
-  "generativeTokenId": 24169,
-  "objktId": 1508918
+  "generativeTokenId": 2969,
+  "objktId": 1508918,
+  "sort": {
+    "price": "DESC"
+  }
 }

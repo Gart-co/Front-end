@@ -1,0 +1,142 @@
+.profile {
+    width: 18.1875rem;
+    height: 32.375rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333333;
+    background-color: #FFFAED;
+    border-radius: 24px;
+    padding: 12px;
+}
+
+.profile .avatar{
+    padding: 6px;
+    width: 6.75rem;
+    height: 6.75rem;
+    flex-shrink: 0;
+    border-radius: 108px;
+    border: 2px solid var(--000000-primary, #000);
+    background: lightgray 50% / cover no-repeat;
+}
+
+.profile .name{
+    color: #000000;
+
+    /* Heading / H3 */
+    font-size: 1.75rem;
+    font-family: Inter;
+    font-weight: 800;
+    padding: 6px;
+}
+
+.profile .id{    
+    padding: 6px;
+}
+
+.profile .lable{
+    width: 9.6875rem;
+    height: 2.875rem;
+    flex-shrink: 0;
+}
+
+.profile .desc{
+    display: flex;
+    width: 17.8125rem;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #666666;
+    padding: 6px;
+
+    /* Text Labels / 14px - Regular */
+    font-size: 0.875rem;
+    font-family: Inter;
+    line-height: 1.3125rem;
+}
+
+.profile .icon-frame{
+    display:flex;
+    flex-direction: row;
+    position: relative;    
+    height: 3rem;
+}
+
+.profile .icon{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 6px;
+    background: #FFF;
+    margin: 2px;
+}
+
+.icon img{
+    width:16px;
+    height:16px;
+    margin:2px;
+}
+
+.profile .counters{
+    width: 17.375rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile .counter-item{
+    height: 100%;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+}
+
+.profile .counter{
+    color:  #000000;
+    text-align: center;
+    
+    /* Heading / H6 */
+    font-size: 1.125rem;
+    font-family: Inter;
+    font-weight: 800;
+    line-height: 1.5rem;
+}
+
+.profile .title{
+    color:  #000000;
+    text-align: center;
+    
+    /* Text Labels / 12px - Medium */
+    font-size: 0.75rem;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 1.125rem;
+}
+
+.profile .follow-button{
+    width: 7.5rem;
+    height: 2.875rem;
+    
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: #000;
+}
+
+.profile .follow{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:  var(--ffffff, #FFF);
+
+    /* Text Labels / 14px - Bold */
+    font-size: 0.875rem;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 1.3125rem;
+}
