@@ -5,7 +5,7 @@ import CurationArticleItem from '../../components/CurationArticleItem/CurationAr
 import {CurationRow} from '../../components/CurationHead/CurationHead'
 import ScrollList from '../../components/ScrollList/ScrollList'
 import Input from '../../components/Input/Input'
-import Footer from '../../components/CurationHeadItem/Footer/Footer'
+import Footer from '../../components/Footer/Footer'
 function AddArticle(){
     const [Add, setAdd] = useState(false);
 
@@ -69,14 +69,14 @@ function ArticleItem(){
 </div>)
 }
 
-function ProjectItem(){
+function ProjectItem(props){
     return(
         <div className="CollectionCard" style={{width: 330, height: 296, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
                 <div className="Group48096685" style={{width: 330, height: 296, position: 'relative'}}>
                     <div className="Rectangle2" style={{width: 330, height: 296, left: 0, top: 0, position: 'absolute', background: 'rgba(255, 255, 255, 0.58)', boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.12)', borderRadius: 12, border: '2px white solid'}} />
                     <div className="Frame143725884" style={{width: 306.24, height: 283, left: 11.88, top: 7, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 4, display: 'inline-flex'}}>
                         <div className="Frame143725885" style={{alignSelf: 'stretch', height: 283, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 4, display: 'flex'}}>
-                            <img className="Rectangle3" style={{width: 316, height: 232, borderRadius: 10}} src="./Rectangle 3.png" />
+                            <img className="Rectangle3" style={{width: 316, height: 232, borderRadius: 10}} src={props.src} />
                             <div className="Frame143725883" style={{alignSelf: 'stretch', paddingLeft: 8, paddingRight: 8, justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
                                 <div className="Frame48096685" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
                                     <div className="StepByStep" style={{color: 'black', fontSize: 16, fontFamily: 'Courier New', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'}}>Step by Step</div>
@@ -187,7 +187,7 @@ export default function Curation() {
             <div className="Tag" style={{position:"absolute",left:18,top:9, textAlign: 'center', color: '#D9D9D9', fontSize: 12, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>Edit Articles</div>
         </div>
     </div>
-    <div className="Frame143725882" style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'inline-flex',flexWrap:"wrap"}}>
+    <div style={{justifyContent: 'flex-start', alignItems: 'flex-start', gap: 20, display: 'inline-flex',flexWrap:"wrap"}}>
        <ArticleItem/>
        <ArticleItem/>
        <ArticleItem/>
@@ -204,9 +204,9 @@ export default function Curation() {
         </div>
         <div className="Frame48096690" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'flex'}}>
             <div className="Frame143725881" style={{width: 1350, justifyContent: 'flex-start', alignItems: 'flex-start', gap: 12, display: 'inline-flex'}}>
-                <ProjectItem/>
-                <ProjectItem/>
-                <ProjectItem/>
+                <ProjectItem src="https://media.fxhash.xyz/w_512/QmahdQdRpX4bh83p3oo1zQRFVfMBYrfP4uiRg86LDpK1dx"/>
+                <ProjectItem src="https://media.fxhash.xyz/w_512/Qmcg7DaHFPcgRyZ3pbwuTgNAS9CP1U7zp5HkjFfKJ9FYWZ"/>
+                <ProjectItem src="https://gateway.fxhash.xyz/ipfs/QmVRQKaFoMUybxmUefj5TExktFWqTVMXBduKcaZgUHYctD"/>
             </div>
         </div>
     </div>

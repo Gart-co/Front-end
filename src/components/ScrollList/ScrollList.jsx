@@ -5,14 +5,19 @@ import { hover } from '@testing-library/user-event/dist/hover';
 import PubSub from 'pubsub-js';
 
 
-function ScrollItem(){
+
+function ScrollItem(props){
+    useEffect(()=>{
+          
+          
+    },[])
     return(
-        <div className="CollectionCard" style={{width: 250, height: 209, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
+        <div ondragover="event.preventDefault()" draggable='true' onDrag={()=>{console.log('Being Dragged')}} className="CollectionCard" style={{width: 250, height: 209, justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
         <div className="Group48096685" style={{width: 250, height: 209, position: 'relative'}}>
             <div className="Rectangle2" style={{width: 250, height: 209, left: 0, top: 0, position: 'absolute', background: 'rgba(255, 255, 255, 0.58)', boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.12)', borderRadius: 12, border: '2px white solid'}} />
             <div className="Frame143725884" style={{width: 232, height: 195, left: 9, top: 7, position: 'absolute', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 4, display: 'inline-flex'}}>
                 <div className="Frame143725885" style={{alignSelf: 'stretch', height: 195, flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 4, display: 'flex'}}>
-                    <img className="Rectangle3" style={{width: 232, height: 144, background: 'linear-gradient(0deg, #C4C4C4 0%, #C4C4C4 100%)', borderRadius: 10}} src="./Curation.png" />
+                    <img className="Rectangle3" style={{width: 232, height: 144, background: 'linear-gradient(0deg, #C4C4C4 0%, #C4C4C4 100%)', borderRadius: 10}} src={props.src} />
                     <div className="Frame143725883" style={{alignSelf: 'stretch', paddingLeft: 8, paddingRight: 8, justifyContent: 'space-between', alignItems: 'center', display: 'inline-flex'}}>
                         <div className="Frame48096685" style={{flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 6, display: 'inline-flex'}}>
                             <div className="StepByStep" style={{color: 'black', fontSize: 16, fontFamily: 'Courier New', fontStyle: 'italic', fontWeight: '400', wordWrap: 'break-word'}}>Step by Step</div>
@@ -36,6 +41,60 @@ function ScrollItem(){
     )
 }
 
+const DragAndDropList = () => {
+    const [items, setItems] = useState([
+      { id: 1, src: "https://i.seadn.io/s/raw/files/2eab16a8662a01daa44cfc803997ce6c.png" },
+      { id: 2, src: "https://i.seadn.io/gcs/files/3d7f982c2f9699caa9e1d2ca4061aa23.png" },
+      { id: 3, src: "https://i.seadn.io/gcs/files/6123b7e074613dde85dbc987fb3e7843.png" },
+      { id: 4, src: "https://gateway.fxhash.xyz/ipfs/QmVRQKaFoMUybxmUefj5TExktFWqTVMXBduKcaZgUHYctD" },
+      { id: 5, src: "https://media.fxhash.xyz/w_512/Qmcg7DaHFPcgRyZ3pbwuTgNAS9CP1U7zp5HkjFfKJ9FYWZ" },
+      { id: 6, src: "https://media.fxhash.xyz/w_512/QmahdQdRpX4bh83p3oo1zQRFVfMBYrfP4uiRg86LDpK1dx" },
+      // Add more items as needed
+    ]);
+  
+    const handleDragStart = (e, index) => {
+        console.log('drag start',  index.toString())
+      e.dataTransfer.setData('index', index.toString());
+    };
+  
+    const handleDragOver = (e) => {
+      e.preventDefault();
+    };
+  
+    const handleDrop = (e, targetIndex) => {
+      e.preventDefault();
+  
+      const draggedIndex = parseInt(e.dataTransfer.getData('index'), 10);
+      const updatedItems = [...items];
+      const draggedItem = updatedItems[draggedIndex];
+  
+      // Remove the dragged item from its original position
+      updatedItems.splice(draggedIndex, 1);
+  
+      // Insert the dragged item at the drop target position
+      updatedItems.splice(targetIndex, 0, draggedItem);
+  
+      setItems(updatedItems);
+    };
+  
+    return (
+      <div style={{display: "flex", flexDirection:'row', alignItems:'flex-start', justifyContent:'center'}}>
+        {items.map((item, index) => (
+          <div
+            key={item.id}
+            draggable
+            onDragStart={(e) => handleDragStart(e, index)}
+            onDragOver={handleDragOver}
+            onDrop={(e) => handleDrop(e, index)}
+            style={{ border: '1px solid #ccc', margin: '5px', padding: '10px'}}
+          >
+            { <ScrollItem src={item.src}/>}
+          </div>
+        ))}
+      </div>
+    );
+  };
+  
 function CuratedItem(){
 
     
@@ -286,14 +345,9 @@ export default function ScrollList() {
         overflowY: 'hidden',
         left:{position},
         position:'relative',
+        overflow:'scroll',
         top: 16}}>
-    
-        <ScrollItem/>
-        <ScrollItem/>
-        <ScrollItem/>
-        <ScrollItem/>
-        <ScrollItem/>
-        <ScrollItem/>
+        <DragAndDropList/>
 </div>
     {/* <div className="Collection" style={{width: '100%', height: '100%', paddingTop: 10, paddingBottom: 10, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
     <div id='horizontal-scrollbar' className="Group48096629" style={{width: 807, height: 26, position: 'relative'}}>

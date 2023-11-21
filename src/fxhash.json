@@ -1,13 +1,22 @@
 {
   "name": "Arctic",
   "userId": "tz1RgndZs5f842TuF43VA4PjHFT9uoERzyGr",
-  "take": 20,
+  "take": 10,
   "generativeTokensTake2": 3,
   "generativeTokensTake3": 5,
   "objktsTake2": null,
-  "generativeTokenId": 2969,
-  "objktId": 1508918,
+  "generativeTokenId": 24169,
+  "objktId": "FX0-1268743",
+  "usersTake2": null,
   "sort": {
-    "price": "DESC"
+    "supply": "DESC"
+  },
+  "filters": {
+    "from": "2023-11-06T12:15:11.496Z",
+    "to": "2023-11-13T12:15:11.496Z"
+  },
+  "marketStatsHistoryFilters": {
+    "from": "2023-11-06T12:15:11.496Z",
+    "to": "2023-11-13T12:15:11.496Z"
   }
 }

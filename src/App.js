@@ -41,6 +41,11 @@ const uriSet = ["displayUri", "avatarUri", "metadataUri", ]
 //   .catch(function (error) {
 //     console.log(error);
 //   });
+function dateBack(i){
+  var demo = new Date(new Date() - i * 86400000)
+  return (demo.toISOString())
+  }
+
 
 
 function fx_data_traverse(obj, path = '') {
@@ -79,6 +84,7 @@ function fx_data_traverse(obj, path = '') {
 }
 var tzkt_url = 'https://api.tzkt.io/v1/delegates?active=true&limit=20'
 
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [loadingOs, setLoadingOs] = useState(true);
@@ -97,6 +103,8 @@ function App() {
     setSub(projectlist);setTimeout(setLoadingabsub(false),5000);console.log(sub);})
 
     let query = fx_query_general;
+    variables.filters.from = dateBack(7)
+    variables.filters.to = dateBack(0)
     axios.post('https://api.fxhash.xyz/graphql',{ query
     , variables,
     }, {
