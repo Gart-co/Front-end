@@ -156,6 +156,7 @@ function App() {
         <Route exact path="/Home" element={<Home/>}/>
         <Route exact path="/Market" element={<div><Market data = {fx.generativeTokens}/></div>}/>
         <Route exact path="/Owned" element={loading?<p>Loading</p>:<Owned data = {fx.user}/>}/>
+        <Route exact path="/Profile" element={loading?<p>Loading</p>:<Owned data = {fx.user}/>}/>
         <Route exact path="/Airdrop" element={<AirDrop/>}/>
         <Route exact path="/Test" element={<ConnectWalletPanel/>}/>
         <Route exact path="/Curation" element={<Curation data = {fx.user}/>}/>

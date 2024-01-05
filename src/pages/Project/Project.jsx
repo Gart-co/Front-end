@@ -82,7 +82,7 @@ export default function Project(props) {
     
     useEffect(()=>{
       drawCardBorder1();
-  }, loading)
+  }, [loading])
   return (
     <div className='background home' style={{position:"relative"}}>
       <div style={{top:0, width:"100%", position:"relative"}}>

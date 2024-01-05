@@ -54,6 +54,7 @@ function jsonExtract(modifyingJson, platform){
     }
 
     if (platform === "Reservoir"){
+        modifiedJson.id = modifyingJson.id;
         modifiedJson.name = modifyingJson.name;
         modifiedJson.displayUri = modifyingJson.image;
         modifiedJson.platform = "ArtBlocks";

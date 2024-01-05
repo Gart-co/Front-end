@@ -25,6 +25,7 @@ function jsonExtract(modifyingJson, platform){
     }
 
     if (platform === "Opensea"){
+        modifiedJson.id = modifyingJson.id;
         modifiedJson.name = modifyingJson.name;
         modifiedJson.displayUri = modifyingJson.image_url;
         modifiedJson.platform = "Opensea";

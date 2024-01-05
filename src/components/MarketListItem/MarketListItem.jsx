@@ -12,7 +12,7 @@ const ListItem = (props) => {
       <div className="frame">
         <img className="art" alt="Art" src={props.data.displayUri} />
         <div className="div">
-        <a href={"http://localhost:3000/Project/"+props.data.id}>
+        <a href={"/Project/"+props.data.id}>
           <div className="name">{props.data.name.length<=20?props.data.name:props.data.name.slice(0,18)+"..."}</div>
         </a>
           <div className="frame-2">
