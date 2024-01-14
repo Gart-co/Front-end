@@ -129,7 +129,6 @@ function Market(props) {
     }
   }).then(response => {
     let fxhash_data = (response.data.data);
-    console.log('fxhash data 114', fxhash_data)
     let json_obj = [];
     for(let i in fxhash_data)
     {

@@ -57,11 +57,9 @@ const ProjectItemPriced = (props) => {
                       <div className="Title" style={{width: 54, height: 11, color: 'black', fontSize: 12, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>List Price</div>
                       <div className="Floor" style={{justifyContent: 'flex-end', alignItems: 'center', display: 'flex'}}>
                           <div className="XtzIcon" style={{width: 22, height: 22, padding: 1, background: '#FFFAED', borderRadius: 11, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>    
-                            <div className="XTZ-ICON">
-                                <img className="icon-img" alt="Xtz ICON" src="Path.svg"/>
-                            </div> 
+                           
                           </div>
-                          <div className="Price" style={{width: 48, height:22, textAlign: 'right', color: 'black', fontSize: 14, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>{typeof props.data.listingprice === 'number'?props.data.listingprice/1000000:"Null"}</div>
+                          <div className="Price" style={{width: 48, height:22, textAlign: 'right', color: 'black', fontSize: 14, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>{typeof props.data.listingprice !== void 0?props.data.listingprice/1000000:"Null"}</div>
                       </div>
                       <div className="Frame48096645" style={{width: 90, height: 21, paddingTop: 1, paddingBottom: 9, background: '#FFFAED', borderRadius: 100, border: '0.50px black solid', justifyContent: 'flex-start', alignItems: 'flex-start', gap: 10, display: 'flex'}}>
                           <div className="Buy" style={{flex: '1 1 0', height: 2, textAlign: 'center', color: 'black', fontSize: 12, fontFamily: 'DM Sans', fontWeight: '700', wordWrap: 'break-word'}}>Buy</div>
@@ -71,9 +69,7 @@ const ProjectItemPriced = (props) => {
                       <div className="Title" style={{width: 54, height: 11, color: 'black', fontSize: 12, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Last Sale</div>
                       <div className="Floor" style={{justifyContent: 'flex-end', alignItems: 'center', display: 'flex'}}>
                           <div className="XtzIcon" style={{width: 22, height: 22, padding: 1, background: '#FFFAED', borderRadius: 11, overflow: 'hidden', justifyContent: 'center', alignItems: 'center', gap: 10, display: 'flex'}}>
-                                <div className="XTZ-ICON">
-                                    <img className="icon-img" alt="Xtz ICON" src="Path.svg"/>
-                                </div> 
+                               
                             </div>
                           <div className="Price" style={{width: 48, textAlign: 'right', color: 'black', fontSize: 14, fontFamily: 'Inter', fontWeight: '700', wordWrap: 'break-word'}}>{props.data.price/1000000}</div>
                       </div>

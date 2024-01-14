@@ -64,7 +64,7 @@ function LeftSidebar(props) {
         <BarButton className='frame' img='./Setting_Icon.svg' title = {"General Setting"} Url={"/"}/>
         <BarButton className='frame' img='./Profile_Setting_Icon.svg' title = {"Profile Setting"} Url={"/"}/>
       </div>
-      <a href='/Profile' className='frame-profile'>
+      <a href='/Curation' className='frame-profile'>
           <div className='profile-name'>Arctic</div>
           <div className='profile-role'>ETH/XTZ login</div>
           <img class="profile-image" src="https://gateway.fxhash.xyz/ipfs/QmcHasWHsaUVvZezurTeBEpKC3MyS223gMrucGraxvcQPn"/>
