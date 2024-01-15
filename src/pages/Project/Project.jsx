@@ -164,10 +164,10 @@ export default function Project(props) {
           })
         .catch(err => console.error(err));
 
-
-      fetch(`https://api.reservoir.tools/collections/v7?collection=${id}`, options)
+        fetch(`https://api.reservoir.tools/collections/v7?id=${id}&limit=1`, options)
       .then(response => response.json())
       .then(response => {
+        console.log(`https://api.reservoir.tools/collections/v7?collection=${id}&limit=1`)
         console.log("Res response", response);
        setData(jsonExtract(response.collections[0],"Reservoir"));
       setLoading(false);})
